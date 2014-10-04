@@ -21,7 +21,11 @@ public class PhoneMainActivity extends Activity {
         setContentView(R.layout.activity_phone_main);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
+<<<<<<< HEAD
                     .add(R.id.map, new PlaceholderFragment())
+=======
+                    .add(R.id.container, new PlaceholderFragment())
+>>>>>>> 6a86b2b3f1b8a414a032140b164e8fbe414878d6
                     .commit();
         }
     }
