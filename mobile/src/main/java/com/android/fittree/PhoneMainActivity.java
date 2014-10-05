@@ -88,7 +88,6 @@ public class PhoneMainActivity extends FragmentActivity {
         }
     }
 
-    //keytool -list -v -alias androiddebugkey -keystore %%Your path%% -storepass android -keypass android
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -138,6 +137,14 @@ public class PhoneMainActivity extends FragmentActivity {
         Fragment fragment = new Fragment();
         if(position == 1){
             fragment = new PlaceholderFragment();
+        }else if(position==0){
+            fragment= new ProfileActivity.PlaceholderFragment();
+        }else if(position==2){
+            fragment= new routeActivity.PlaceholderFragment();
+        }else if(position==3){
+            fragment= new FitnessActivity.PlaceholderFragment();
+        }else if(position==4){
+            fragment = new environmentalAct.PlaceholderFragment();
         }
         if(fragment != null){
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -180,7 +187,7 @@ public class PhoneMainActivity extends FragmentActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            String[] data = {"Maps","Fitness","Calories", "Lanciao"};
+            String[] data = {"Maps","Fitness","Calories"};
             List<String> Menu = new ArrayList<String>(Arrays.asList(data));
 
             mMenuAdapter = new ArrayAdapter<String>(

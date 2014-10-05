@@ -42,7 +42,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAQ4MVZjUN_or6QaZ-qt52mz4fueKekFQY"/>
+            android:value="AIzaSyAQ4MVZjUN_or6QaZ-qt52mz4fueKekFQY" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -51,12 +51,14 @@
             android:name=".AboutUsActivity"
             android:label="@string/title_activity_about_us"
             android:parentActivityName=".PhoneMainActivity"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Dialog" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.android.fittree.PhoneMainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.ABOUTUS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -64,14 +66,47 @@
             android:name=".PreferenceActivity"
             android:label="@string/title_activity_preference"
             android:parentActivityName=".PhoneMainActivity"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Dialog" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.android.fittree.PhoneMainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.PREFS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".PhoneMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.fittree.PhoneMainActivity" />
+        </activity>
+        <activity
+            android:name=".routeActivity"
+            android:label="@string/title_activity_route"
+            android:parentActivityName=".PhoneMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.fittree.PhoneMainActivity" />
+        </activity>
+        <activity
+            android:name=".FitnessActivity"
+            android:label="@string/title_activity_fitness"
+            android:parentActivityName=".PhoneMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.fittree.PhoneMainActivity" />
+        </activity>
+        <activity
+            android:name=".environmentalAct"
+            android:label="@string/title_activity_environmental"
+            android:parentActivityName=".PhoneMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.fittree.PhoneMainActivity" />
         </activity>
     </application>
 

@@ -13,27 +13,30 @@
         <item>Brutus Buckeye</item>
         <item>Home</item>
         <item>Activities</item>
-        <item>Friends</item>
+        <item>Fitness</item>
+        <item>Environmental</item>
         <item>Sign out</item>
     </string-array>
 
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_preference">PreferenceActivity</string>
-    <!-- Navigation drawer open and close text-->
+    <!-- Navigation drawer open and close text -->
     <string name="drawer_open">drawer open</string>
     <string name="drawer_close">drawer close</string>
 
-    <string-array name ="list">
-            <item>Google+ </item>
-            <item>Facebook </item>
-            <item>Twitter </item>
+    <string-array name="list">
+        <item>Google+ </item>
+        <item>Facebook </item>
+        <item>Twitter </item>
     </string-array>
-    <string-array name="lValues" >
+    <string-array name="lValues">
         <item>1 </item>
         <item>2 </item>
         <item>3 </item>
     </string-array>
 
-
+    <string name="title_activity_route">routeActivity</string>
+    <string name="title_activity_fitness">FitnessActivity</string>
+    <string name="title_activity_environmental">environmentalAct</string>
 
 </resources>
