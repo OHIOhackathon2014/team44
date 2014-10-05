@@ -19,6 +19,9 @@
 
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_preference">PreferenceActivity</string>
+    <!-- Navigation drawer open and close text-->
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
 
     <string-array name ="list">
             <item>Google+ </item>
@@ -30,5 +33,7 @@
         <item>2 </item>
         <item>3 </item>
     </string-array>
+
+
 
 </resources>
